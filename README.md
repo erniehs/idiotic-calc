@@ -1,5 +1,7 @@
 # the idiotic calculator
 
+![Java CI with Maven](https://github.com/erniehs/idiotic-calc/workflows/Java%20CI%20with%20Maven/badge.svg)
+
 truly the silliest implementation of a calculator. however we must learn these modern microservice ways so we may as well do something silly... _i would not reccomend this as a model for writing a calculator :)_
 
 ## prerequisites
