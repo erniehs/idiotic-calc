@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: add
+  name: add
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: add
+  template:
+    metadata:
+      labels:
+        app: add
+    spec:
+      containers:
+        - image: localhost:5000/library/add:latest
+          imagePullPolicy: Always
+          name: add-container
+          readinessProbe:
+            initialDelaySeconds: 30
+            httpGet:
+              port: 8080
+              path: /actuator/health/readiness
+          livenessProbe:
+            initialDelaySeconds: 30
+            httpGet:
+              port: 8080
+              path: /actuator/health/liveness
+          lifecycle:
+            preStop:
+              exec:
+                command: ["sh", "-c", "sleep 10"]
+          resources:
+            limits:
+              cpu: "1"
+            requests:
+              cpu: "0.5"
+

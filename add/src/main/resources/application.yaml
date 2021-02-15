@@ -1,0 +1,6 @@
+server.shutdown: graceful
+management:
+  endpoint.health.probes.enabled: true
+  health.livenessState.enabled: true
+  health.readinessState.enabled: true
+logging.level.com.vgernsoft.calc: DEBUG
