@@ -1,12 +1,12 @@
-package com.vgernsoft.calc.add;
+package com.vgernsoft.calc.op;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Add {
+public class Op {
 
     public static void main(String[] args) {
-        SpringApplication.run(Add.class, args);
+        SpringApplication.run(Op.class, args);
     }
 }

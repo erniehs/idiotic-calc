@@ -50,7 +50,7 @@ mvn spring-boot:build-image
 push the images to the registry (can do this in pom also if u have docker etc.)
 
 ```sh
-docker push localhost:5000/library/add:latest
+docker push localhost:5000/library/op:latest
 docker push localhost:5000/library/calculator:latest
 ```
 

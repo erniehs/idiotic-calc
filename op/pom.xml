@@ -4,12 +4,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.vgernsoft.calc</groupId>
-  <artifactId>add</artifactId>
+  <artifactId>op</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>add</name>
-  <description>a stupid way to add two numbers</description>
+  <name>op</name>
+  <description>a stupid way to implement a binary operator</description>
 
   <parent>
     <groupId>com.vgernsoft.calc</groupId>

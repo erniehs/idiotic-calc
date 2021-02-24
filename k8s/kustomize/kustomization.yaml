@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: calculator
 
 bases:
-  - ../add
+  - ../op
   - ../calculator 
 
 resources:
