@@ -1,4 +1,4 @@
-package com.vgernsoft.calc.add;
+package com.vgernsoft.calc.op;
 
 import static java.lang.String.format;
 import static org.hamcrest.Matchers.containsString;
@@ -11,8 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-@WebMvcTest(AddController.class)
-public class AddControllerTest {
+@WebMvcTest(OpController.class)
+public class OpControllerTest {
 
     @Autowired
     private MockMvc mockMvc;

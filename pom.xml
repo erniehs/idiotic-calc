@@ -20,7 +20,7 @@
   <modules>
     <module>common</module>
     <module>calculator</module>
-    <module>add</module>
+    <module>op</module>
   </modules>
 
   <properties>

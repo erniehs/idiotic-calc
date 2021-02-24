@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: add
-  name: add
+    app: op
+  name: op
 spec:
   ports:
     - name: 81-8080
@@ -11,7 +11,7 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector:
-    app: add
+    app: op
   type: LoadBalancer
 status:
   loadBalancer: {}

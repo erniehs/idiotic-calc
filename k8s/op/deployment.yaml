@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: add
-  name: add
+    app: op
+  name: op
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: add
+      app: op
   template:
     metadata:
       labels:
-        app: add
+        app: op
     spec:
       containers:
-        - image: localhost:5000/library/add:latest
+        - image: localhost:5000/library/op:latest
           imagePullPolicy: Always
-          name: add-container
+          name: op-container
           readinessProbe:
             initialDelaySeconds: 30
             httpGet:
