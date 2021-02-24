@@ -21,7 +21,7 @@ public class OpControllerTest {
     public void calcIntegerShouldReturnValidResult() throws Exception {
         final String a = "5";
         final String b = "6";
-        this.mockMvc.perform(get("/add/" + a + "/to/" + b)).andExpect(status().isOk())
+        this.mockMvc.perform(get("/api/1.0.0/" + a + "/+/" + b)).andExpect(status().isOk())
                 .andExpect(content().string(containsString(format("%f", 11.0))));
     }
 
@@ -29,7 +29,7 @@ public class OpControllerTest {
     public void calcFloatShouldReturnValidResult() throws Exception {
         final String a = "5.7";
         final String b = "-6";
-        this.mockMvc.perform(get("/add/" + a + "/to/" + b)).andExpect(status().isOk())
+        this.mockMvc.perform(get("/api/1.0.0/" + a + "/+/" + b)).andExpect(status().isOk())
                 .andExpect(content().string(containsString(format("%f", (5.7 + -6)))));
     }
 }
