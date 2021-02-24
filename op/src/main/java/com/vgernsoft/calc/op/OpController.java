@@ -18,8 +18,8 @@ import lombok.extern.slf4j.Slf4j;
 class OpController {
 
     @GetMapping("/{a}/{op}/{b}")
-    public ResponseEntity<String> calc(@PathVariable String a, @PathVariable String op, @PathVariable String b) {
+    public ResponseEntity<Double> calc(@PathVariable String a, @PathVariable String op, @PathVariable String b) {
         log.debug("attempting operation {} {} {}", a, op, b);
-        return new ResponseEntity<String>(format("%f", parseDouble(a) + Double.parseDouble(b)), HttpStatus.OK);
+        return new ResponseEntity<Double>(com.vgernsoft.calc.common.Op.exec(op, Double.valueOf(a), Double.valueOf(b)), HttpStatus.OK);
     }
 }

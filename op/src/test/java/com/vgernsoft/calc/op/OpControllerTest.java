@@ -22,7 +22,7 @@ public class OpControllerTest {
         final String a = "5";
         final String b = "6";
         this.mockMvc.perform(get("/api/1.0.0/" + a + "/+/" + b)).andExpect(status().isOk())
-                .andExpect(content().string(containsString(format("%f", 11.0))));
+                .andExpect(content().string(containsString(Double.toString(11.0))));
     }
 
     @Test
@@ -30,6 +30,6 @@ public class OpControllerTest {
         final String a = "5.7";
         final String b = "-6";
         this.mockMvc.perform(get("/api/1.0.0/" + a + "/+/" + b)).andExpect(status().isOk())
-                .andExpect(content().string(containsString(format("%f", (5.7 + -6)))));
+                .andExpect(content().string(containsString(Double.toString(5.7 + -6))));
     }
 }
