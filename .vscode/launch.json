@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch OpApplication",
+            "request": "launch",
+            "mainClass": "com.vgernsoft.calc.op.OpApplication",
+            "projectName": "op"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

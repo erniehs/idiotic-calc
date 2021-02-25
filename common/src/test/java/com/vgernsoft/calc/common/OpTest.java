@@ -4,9 +4,18 @@ import static com.vgernsoft.calc.common.Op.exec;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import java.util.Set;
+
 import org.junit.jupiter.api.Test;
 
 public class OpTest {
+
+    @Test
+    public void allOps() {
+
+        // given, then, when
+        assertEquals(Set.of("+", "-", "/" , "*"), Op.supported());
+    }
 
     @Test
     public void nullArgs() {
