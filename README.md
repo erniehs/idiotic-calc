@@ -87,15 +87,14 @@ you have explosed endpoints,
 
 http://localhost/calc/12+5
 
-http://localhost:81/add/12/to/14
-
-### hitting the endpoints
-
-TBD
+http://localhost:81/12/add/14
+http://localhost:81/12/sub/14
+http://localhost:81/12/mul/14
+http://localhost:81/12/div/14
 
 ### jmeter, hammer the calculator
 
-TBD
+jmeter file in jmeter folder
 
 ## horizontal auto scaling
 
