@@ -20,7 +20,7 @@ public class CalculatorControllerTest {
     public void calcShouldReturnExpr() throws Exception {
         final String expr = "(1+2)/2+(34+6)/9";
 
-        this.mockMvc.perform(get("/calc/" + expr)).andExpect(status().isOk())
+        this.mockMvc.perform(get("/api/1.0.0/calc/" + expr)).andExpect(status().isOk())
                 .andExpect(content().string(containsString(expr)));
     }
 }
