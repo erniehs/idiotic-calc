@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class CalculatorSetpDefs extends SpringIntegrationTest {
+public class CalculatorSepDefs extends SpringIntegrationTest {
     Double total;
     Double precision;
     String version;
@@ -20,8 +20,8 @@ public class CalculatorSetpDefs extends SpringIntegrationTest {
     }
 
     @When("the client calculates {string}")
-    public void the_client_calculates(String string) {
-        throw new io.cucumber.java.PendingException();
+    public void the_client_calculates(String expr) {
+        total = callCalculatorService(version, expr);
     }
 
     @Then("the result should be {double}")
