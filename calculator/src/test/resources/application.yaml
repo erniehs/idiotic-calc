@@ -1,1 +1,2 @@
-logging.level.com.vgernsoft.calc: DEBUG
+logging.level:
+  com.vgernsoft.calc: DEBUG
